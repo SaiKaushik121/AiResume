@@ -13,7 +13,7 @@ export default function Homepage() {
         <div className="hero-left">
           <h1 className="hero-title">AI-Powered Resume Builder</h1>
           <div className="hero-tagline">Land your dream job with a smarter, faster, and more personalized career toolkit.</div>
-          <ul className="hero-steps">
+           git commit -m "Initial commit: AI Resume Builder MVP"          <ul className="hero-steps">
             <li><span className="step-icon">1️⃣</span> Enter your details & job description</li>
             <li><span className="step-icon">2️⃣</span> Get a tailored resume, skill gap analysis, and learning plan</li>
             <li><span className="step-icon">3️⃣</span> Download, copy, and ace your interview!</li>
