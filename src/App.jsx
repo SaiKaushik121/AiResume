@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename='/AiResume/'>
     <Routes>
       <Route path='/' element={<Homepage />}></Route>
       <Route path='/personal' element = {<PersonalDetails />}></Route>
