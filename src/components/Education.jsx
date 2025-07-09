@@ -71,7 +71,7 @@ export default function Education() {
             <div key={index} className="bg-gray-50 rounded-md p-4 sm:p-6 mb-8">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2 gap-2">
                 <h2 className="text-lg sm:text-2xl font-bold mb-4 sm:mb-8 text-gray-800">
-                  Education {intial.length > 1 ? `#${index + 1}` : "(Optional)"}
+                  Education {intial.length > 1 && `#${index + 1}`}
                 </h2>
                 {intial.length > 1 && index !== 0 && (
                   <button
