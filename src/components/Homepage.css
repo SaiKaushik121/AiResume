@@ -1,0 +1,314 @@
+.homepage-hero .hero-buttons button {
+  font-size: 1.125rem;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .homepage-hero .hero-buttons button {
+    font-size: 0.95rem;
+    padding: 0.5rem 1.1rem;
+    border-radius: 0.45rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+/* Hero Section */
+.homepage-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  background: radial-gradient(circle,rgba(238, 174, 202, 1) 47%, rgba(148, 187, 233, 1) 57%);
+  border-radius: 16px;
+  max-width: 1100px;
+  padding: 24px 8px 16px 8px;
+  margin: 24px 8px 24px 8px;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.10);
+  position: relative;
+  gap: 2.5rem;
+}
+@media (min-width: 640px) {
+  .homepage-hero {
+    padding: 36px 24px 24px 24px;
+    margin: 40px auto 32px auto;
+    gap: 2.5rem;
+  }
+}
+@media (min-width: 900px) {
+  .homepage-hero {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 48px 32px 48px;
+    margin: 60px auto 32px auto;
+    gap: 0;
+  }
+}
+/* Responsive hero-left */
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+  max-width: 100vw;
+  z-index: 2;
+  margin-bottom: 2rem;
+}
+@media (min-width: 640px) {
+  .hero-left {
+    max-width: 520px;
+    margin-bottom: 0;
+  }
+}
+.hero-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+  color: #1a237e;
+  line-height: 1.1;
+}
+@media (min-width: 640px) {
+  .hero-title {
+    font-size: 2.5em;
+  }
+}
+.hero-tagline {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 1.2em;
+}
+@media (min-width: 640px) {
+  .hero-tagline {
+    font-size: 1.2em;
+  }
+}
+.hero-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2em 0;
+}
+.hero-steps li {
+  font-size: 0.95em;
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+  color: #444;
+}
+@media (min-width: 640px) {
+  .hero-steps li {
+    font-size: 1em;
+  }
+}
+.step-icon {
+  margin-right: 0.6em;
+  font-size: 1.1em;
+}
+.hero-buttons {
+  margin-top: 1.2em;
+}
+.btn-icon {
+  margin-right: 0.5em;
+}
+.coming-soon {
+  font-size: 0.9em;
+  color: #555;
+}
+.hero-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  z-index: 1;
+}
+.hero-illustration {
+  width: 90vw;
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  background: #fff;
+  height: auto;
+}
+@media (min-width: 640px) {
+  .hero-illustration {
+    width: 320px;
+    max-width: 320px;
+  }
+}
+@media (min-width: 900px) {
+  .homepage-hero {
+    flex-direction: row;
+    padding: 48px 48px 32px 48px;
+  }
+  .hero-left {
+    align-items: flex-start;
+    margin-right: 32px;
+  }
+  .hero-right {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+
+
+/* Fix: Prevent hero buttons from overflowing gradient background on mobile */
+.button-container {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+@media (max-width: 640px) {
+  .button-container.hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.7em;
+  }
+}
+
+button:hover {
+  cursor: pointer;
+}
+#newresumebtn, #existingresumebtn {
+  border-radius: 999px;
+  border: none;
+  padding: 0.85em 2.2em;
+  font-size: 1.13em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  outline: none;
+}
+
+@media (max-width: 640px) {
+  #newresumebtn, #existingresumebtn {
+    font-size: 0.95rem;
+    padding: 0.5rem 1.1rem;
+    border-radius: 0.45rem;
+    gap: 0.5em;
+  }
+}
+#newresumebtn {
+  background: linear-gradient(90deg, #1976d2 60%, #64b5f6 100%);
+  color: #fff;
+  border: none;
+}
+#newresumebtn:hover {
+  background: linear-gradient(90deg, #125ea2 60%, #1976d2 100%);
+  color: #e3f2fd;
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.13);
+}
+#existingresumebtn {
+  background: #e3e8ef;
+  color: #7b91a3;
+  border: none;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.btn-icon {
+  font-size: 1.2em;
+  margin-right: 0.2em;
+}
+.button-container.hero-buttons {
+  gap: 1.2em;
+}
+
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 3.5rem auto 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+
+.feature {
+  background: #f8f9fa;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 2.2rem 1.7rem 2rem 1.7rem;
+  width: 270px;
+  max-width: 90vw;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  border: 1.5px solid #e3e3e3;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.feature:hover {
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.13);
+  border: 1.5px solid #b3c6e6;
+}
+
+
+.feature-icon {
+  font-size: 2.2em;
+  margin-bottom: 15px;
+}
+.feature-title {
+  font-size: 1.15em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  color: #1a237e;
+}
+
+/* Testimonial Section */
+.homepage-testimonial {
+  background: #fffbe7;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  max-width: 600px;
+  margin: 2.5rem auto 0 auto;
+  padding: 2rem 2.5rem 1.2rem 2.5rem;
+  text-align: center;
+  font-size: 1.1em;
+}
+.testimonial-quote {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 0.7em;
+}
+.testimonial-user {
+  color: #1976d2;
+  font-weight: 500;
+}
+
+/* Footer */
+.homepage-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2em;
+  font-size: 1em;
+  color: #888;
+  background: #f8f9fa;
+  border-radius: 0 0 12px 12px;
+  padding: 1.2em 0 1.5em 0;
+  margin: 2.5rem auto 0 auto;
+  max-width: 900px;
+}
+.homepage-footer a {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+}
+.homepage-footer a:hover {
+  text-decoration: underline;
+}

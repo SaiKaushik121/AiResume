@@ -1,0 +1,20 @@
+.header-container{
+    display: flex;
+    flex-direction: row;
+    background: #2c3e50;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
+    width: 100%;
+
+}
+
+.back-btn{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    
+}

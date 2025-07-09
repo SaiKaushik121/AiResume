@@ -1,0 +1,39 @@
+.input[type="number"]::-webkit-outer-spin-button,
+.input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.form-section{
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+}
+
+
+.input-fields-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.input{
+    width: 100%;
+    padding: 12px;
+    border:2px solid #e9ecef;
+    border-radius: 6px;
+}
+
+.form-heading{
+    font-size: 30px;
+    font-weight: 500;
+}
